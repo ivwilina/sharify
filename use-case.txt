@@ -1,0 +1,26 @@
+-chia deu tien
+-chia tien theo nguoi
+-hien thi ngay gio
+-tuy chinh nguoi tham gia
+-chon nguoi tra tien
+-ghi lai mon an
+
+{
+  {
+    host: string,
+    date: string,
+    bill: number,
+    autoshare: boolean
+    menu: string,
+    member: [
+      {
+        id: string,
+        bill?: number;
+      }
+    ] 
+  }
+}
+
+{
+  
+}
