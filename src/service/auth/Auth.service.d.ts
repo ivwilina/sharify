@@ -1,8 +1,22 @@
 interface AuthService {
-  signIn(username: string, password: string): Promise<AuthOutput>;
+  signIn(
+    username: string,
+    password: string
+  ): Promise<AuthOutput>;
+
   signOut(): Promise<void>;
-  signUp(username: string, password: string, displayName: string): Promise<AuthOutput>;
-  changePassword(_id: string, oldPassword: string, newPassword: string): Promise<AuthOutput>;
+
+  signUp(
+    username   : string,
+    password   : string,
+    displayName: string
+  ): Promise<AuthOutput>;
+
+  changePassword(
+    _id        : string,
+    oldPassword: string,
+    newPassword: string
+  ): Promise<AuthOutput>;
 }
 
 /* -------------------------------------------------------------------------- */
